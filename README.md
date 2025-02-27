@@ -80,6 +80,9 @@
         function goToSignIn() {
             window.location.href = 'signin.html';
         }
+        function goToSignUp() {
+            window.location.href = 'signup.html';
+        }
     </script>
 </head>
 <body>
@@ -96,9 +99,8 @@
         <p>Your journey to self-improvement starts here. Set goals, track progress, and challenge yourself.</p>
         <div class="auth-buttons">
             <button class="button sign-in" onclick="goToSignIn()">Sign In</button>
-            <button class="button sign-up">Sign Up</button>
+            <button class="button sign-up" onclick="goToSignUp()">Sign Up</button>
         </div>
     </div>
 </body>
 </html>
-
