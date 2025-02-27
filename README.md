@@ -8,51 +8,51 @@
     <style>
         body {
             margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #0066ff;
-            color: white;
             font-family: 'Inter', sans-serif;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
+            background-color: #f5f5f7;
+            color: #333;
         }
-        .container {
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            margin: 0 15px;
+        }
+        .hero {
+            height: 100vh;
             display: flex;
             flex-direction: column;
-            align-items: center;
             justify-content: center;
-            position: absolute;
-            width: 100%;
+            align-items: center;
+            text-align: center;
+            padding-top: 80px;
         }
-        h1 {
-            font-size: 5rem;
+        .hero h1 {
+            font-size: 4rem;
             font-weight: 700;
-            letter-spacing: 2px;
-            text-transform: uppercase;
+            margin-bottom: 20px;
         }
-        .arrow {
-            position: absolute;
-            bottom: 50px;
-            font-size: 24px;
-            cursor: pointer;
-            animation: bounce 1.5s infinite;
+        .hero p {
+            font-size: 1.5rem;
+            max-width: 600px;
         }
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-        .auth {
-            display: none;
-            flex-direction: column;
+        .auth-buttons {
+            display: flex;
             gap: 20px;
-            animation: fadeIn 1s ease-in-out;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            margin-top: 30px;
         }
         .button {
             padding: 15px 40px;
@@ -64,13 +64,13 @@
             transition: 0.3s ease;
         }
         .sign-in {
-            background-color: white;
-            color: #0066ff;
+            background-color: #0066ff;
+            color: white;
         }
         .sign-up {
             background-color: transparent;
-            border: 2px solid white;
-            color: white;
+            border: 2px solid #0066ff;
+            color: #0066ff;
         }
         .button:hover {
             transform: scale(1.1);
@@ -78,20 +78,21 @@
     </style>
 </head>
 <body>
-    <div class="container" id="landing">
+    <div class="navbar">
+        <div class="logo"><h2>Beyond</h2></div>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#membership">Membership</a>
+        </div>
+    </div>
+    <div class="hero" id="home">
         <h1>Beyond</h1>
-        <div class="arrow" id="arrow">⬇ Click to Continue ⬇</div>
+        <p>Your journey to self-improvement starts here. Set goals, track progress, and challenge yourself.</p>
+        <div class="auth-buttons">
+            <button class="button sign-in">Sign In</button>
+            <button class="button sign-up">Sign Up</button>
+        </div>
     </div>
-    <div class="container auth" id="auth">
-        <button class="button sign-in">Sign In</button>
-        <button class="button sign-up">Sign Up</button>
-    </div>
-    <script>
-        document.getElementById('arrow').addEventListener('click', () => {
-            document.getElementById('landing').style.display = 'none';
-            document.getElementById('auth').style.display = 'flex';
-        });
-    </script>
 </body>
 </html>
-
