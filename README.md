@@ -81,7 +81,7 @@
             text-align: center;
             background-color: #111;
         }
-        .about, .membership {
+        .about, .membership, .achievements, .testimonials {
             background-color: #222;
         }
         .membership button {
@@ -91,6 +91,19 @@
             border-radius: 20px;
             font-size: 18px;
             cursor: pointer;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px;
+        }
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
         }
     </style>
     <script>
@@ -111,6 +124,8 @@
         <div>
             <a onclick="goToSection('home')">Home</a>
             <a onclick="goToSection('about')">About Us</a>
+            <a onclick="goToSection('achievements')">Achievements</a>
+            <a onclick="goToSection('testimonials')">Testimonials</a>
             <a onclick="goToSection('membership')">Membership</a>
         </div>
     </div>
@@ -122,9 +137,23 @@
             <button class="button sign-up" onclick="goToSignUp()">Get Started</button>
         </div>
     </div>
+    <div class="gallery">
+        <img src="https://source.unsplash.com/400x300/?success" alt="Success">
+        <img src="https://source.unsplash.com/400x300/?goal" alt="Goal">
+        <img src="https://source.unsplash.com/400x300/?motivation" alt="Motivation">
+    </div>
     <div class="section about" id="about">
         <h2>About Us</h2>
         <p>Beyond is dedicated to helping individuals overcome personal challenges through structured goal setting and tracking.</p>
+    </div>
+    <div class="section achievements" id="achievements">
+        <h2>Greatest Achievements</h2>
+        <p>We've helped thousands of users reach their personal and professional goals.</p>
+    </div>
+    <div class="section testimonials" id="testimonials">
+        <h2>What People Say</h2>
+        <p>"Beyond changed my life! I finally overcame my biggest challenges and achieved my dreams." - User A</p>
+        <p>"A game-changer for self-improvement! Highly recommend it to everyone." - User B</p>
     </div>
     <div class="section membership" id="membership">
         <h2>Membership</h2>
@@ -133,4 +162,3 @@
     </div>
 </body>
 </html>
-
