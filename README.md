@@ -9,7 +9,7 @@
         body {
             margin: 0;
             font-family: 'Inter', sans-serif;
-            background-color: #f5f5f7;
+            background-color: #ffffff;
             color: #333;
         }
         .navbar {
@@ -40,7 +40,7 @@
             align-items: center;
             text-align: center;
             padding-top: 80px;
-            background: url('https://source.unsplash.com/1600x900/?nature,technology') no-repeat center center/cover;
+            background: url('https://source.unsplash.com/1600x900/?nature,freedom') no-repeat center center/cover;
             color: white;
         }
         .hero h1 {
@@ -83,7 +83,7 @@
             text-align: center;
         }
         .about, .membership {
-            background-color: #fff;
+            background-color: #f5f5f7;
         }
         .membership button {
             background-color: #28a745;
@@ -117,7 +117,7 @@
     </div>
     <div class="hero" id="home">
         <h1>Beyond</h1>
-        <p>Your journey to self-improvement starts here. Set goals, track progress, and challenge yourself.</p>
+        <p>Helping you break free from habits and achieve your goals through structured challenges and tracking.</p>
         <div class="auth-buttons">
             <button class="button sign-in" onclick="goToSignIn()">Sign In</button>
             <button class="button sign-up" onclick="goToSignUp()">Sign Up</button>
@@ -125,12 +125,13 @@
     </div>
     <div class="section about" id="about">
         <h2>About Us</h2>
-        <p>Beyond is dedicated to helping individuals achieve their personal and professional goals through a structured and engaging platform.</p>
+        <p>Beyond is dedicated to helping individuals overcome personal challenges through structured goal setting and tracking.</p>
     </div>
     <div class="section membership" id="membership">
         <h2>Membership</h2>
-        <p>Join our community and unlock exclusive content, personalized goal tracking, and premium support.</p>
+        <p>Join our community and gain access to exclusive challenges, personalized goal tracking, and expert guidance.</p>
         <button onclick="alert('Membership purchased!')">Buy Membership</button>
     </div>
 </body>
 </html>
+
