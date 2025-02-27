@@ -30,6 +30,7 @@
             color: #333;
             font-size: 18px;
             margin: 0 15px;
+            cursor: pointer;
         }
         .hero {
             height: 100vh;
@@ -39,6 +40,8 @@
             align-items: center;
             text-align: center;
             padding-top: 80px;
+            background: url('https://source.unsplash.com/1600x900/?nature,technology') no-repeat center center/cover;
+            color: white;
         }
         .hero h1 {
             font-size: 4rem;
@@ -75,6 +78,21 @@
         .button:hover {
             transform: scale(1.1);
         }
+        .section {
+            padding: 100px 50px;
+            text-align: center;
+        }
+        .about, .membership {
+            background-color: #fff;
+        }
+        .membership button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
     </style>
     <script>
         function goToSignIn() {
@@ -83,15 +101,18 @@
         function goToSignUp() {
             window.location.href = 'signup.html';
         }
+        function goToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
     </script>
 </head>
 <body>
     <div class="navbar">
         <div class="logo"><h2>Beyond</h2></div>
         <div>
-            <a href="#home">Home</a>
-            <a href="#about">About Us</a>
-            <a href="#membership">Membership</a>
+            <a onclick="goToSection('home')">Home</a>
+            <a onclick="goToSection('about')">About Us</a>
+            <a onclick="goToSection('membership')">Membership</a>
         </div>
     </div>
     <div class="hero" id="home">
@@ -101,6 +122,15 @@
             <button class="button sign-in" onclick="goToSignIn()">Sign In</button>
             <button class="button sign-up" onclick="goToSignUp()">Sign Up</button>
         </div>
+    </div>
+    <div class="section about" id="about">
+        <h2>About Us</h2>
+        <p>Beyond is dedicated to helping individuals achieve their personal and professional goals through a structured and engaging platform.</p>
+    </div>
+    <div class="section membership" id="membership">
+        <h2>Membership</h2>
+        <p>Join our community and unlock exclusive content, personalized goal tracking, and premium support.</p>
+        <button onclick="alert('Membership purchased!')">Buy Membership</button>
     </div>
 </body>
 </html>
