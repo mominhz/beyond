@@ -76,6 +76,11 @@
             transform: scale(1.1);
         }
     </style>
+    <script>
+        function goToSignIn() {
+            window.location.href = 'signin.html';
+        }
+    </script>
 </head>
 <body>
     <div class="navbar">
@@ -90,9 +95,10 @@
         <h1>Beyond</h1>
         <p>Your journey to self-improvement starts here. Set goals, track progress, and challenge yourself.</p>
         <div class="auth-buttons">
-            <button class="button sign-in">Sign In</button>
+            <button class="button sign-in" onclick="goToSignIn()">Sign In</button>
             <button class="button sign-up">Sign Up</button>
         </div>
     </div>
 </body>
 </html>
+
