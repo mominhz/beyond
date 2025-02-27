@@ -9,16 +9,15 @@
         body {
             margin: 0;
             font-family: 'Inter', sans-serif;
-            background-color: #ffffff;
-            color: #333;
+            background-color: #000;
+            color: #fff;
         }
         .navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px 50px;
-            background-color: white;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: black;
             position: fixed;
             width: 100%;
             top: 0;
@@ -27,7 +26,7 @@
         }
         .navbar a {
             text-decoration: none;
-            color: #333;
+            color: #fff;
             font-size: 18px;
             margin: 0 15px;
             cursor: pointer;
@@ -40,8 +39,7 @@
             align-items: center;
             text-align: center;
             padding-top: 80px;
-            background: url('https://source.unsplash.com/1600x900/?nature,freedom') no-repeat center center/cover;
-            color: white;
+            background: url('https://source.unsplash.com/1600x900/?luxury,lifestyle') no-repeat center center/cover;
         }
         .hero h1 {
             font-size: 4rem;
@@ -67,13 +65,13 @@
             transition: 0.3s ease;
         }
         .sign-in {
-            background-color: #0066ff;
+            background-color: #ff0055;
             color: white;
         }
         .sign-up {
             background-color: transparent;
-            border: 2px solid #0066ff;
-            color: #0066ff;
+            border: 2px solid #ff0055;
+            color: #ff0055;
         }
         .button:hover {
             transform: scale(1.1);
@@ -81,12 +79,13 @@
         .section {
             padding: 100px 50px;
             text-align: center;
+            background-color: #111;
         }
         .about, .membership {
-            background-color: #f5f5f7;
+            background-color: #222;
         }
         .membership button {
-            background-color: #28a745;
+            background-color: #ff0055;
             color: white;
             padding: 10px 25px;
             border-radius: 20px;
@@ -119,8 +118,8 @@
         <h1>Beyond</h1>
         <p>Helping you break free from habits and achieve your goals through structured challenges and tracking.</p>
         <div class="auth-buttons">
-            <button class="button sign-in" onclick="goToSignIn()">Sign In</button>
-            <button class="button sign-up" onclick="goToSignUp()">Sign Up</button>
+            <button class="button sign-in" onclick="goToSignIn()">Log In</button>
+            <button class="button sign-up" onclick="goToSignUp()">Get Started</button>
         </div>
     </div>
     <div class="section about" id="about">
