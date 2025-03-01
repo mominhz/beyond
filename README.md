@@ -15,7 +15,7 @@
         body {
             background-color: #f8f8f8;
             color: #333;
-            padding-top: 80px; /* Prevents content from being hidden under fixed navbar */
+            padding-top: 80px;
         }
         .navbar {
             display: flex;
@@ -82,23 +82,6 @@
         .button:hover {
             transform: scale(1.1);
         }
-        .input-container {
-            display: none;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 50px;
-        }
-        .input-container input {
-            width: 300px;
-            padding: 15px;
-            font-size: 16px;
-            margin-bottom: 20px;
-            border: 2px solid #ccc;
-            border-radius: 8px;
-        }
-        .input-container input:focus {
-            border-color: #007AFF;
-        }
         footer {
             padding: 20px;
             text-align: center;
@@ -126,39 +109,16 @@
         <h1>Beyond</h1>
         <p>Helping you break free from distractions and achieve your best self through structured goals and tracking.</p>
         <div class="auth-buttons">
-            <button class="button sign-in" onclick="showLoginForm()">Log In</button>
-            <button class="button sign-up" onclick="window.location.href='signup.html'">Get Started</button>
+            <!-- Link to Login Page -->
+            <a href="login.html"><button class="button sign-in">Log In</button></a>
+            <!-- Link to Get Started Page -->
+            <a href="signup.html"><button class="button sign-up">Get Started</button></a>
         </div>
     </div>
 
-    <!-- Login Form Section (Initially Hidden) -->
-    <div class="input-container" id="login-form">
-        <input type="email" placeholder="Email" id="email" required>
-        <input type="password" placeholder="Password" id="password" required>
-        <button class="button sign-in" id="submit-login" onclick="loginFunction()">Log In</button>
-    </div>
-    
     <footer>
         <p>© 2025 Beyond. All Rights Reserved.</p>
     </footer>
-
-    <script>
-        function showLoginForm() {
-            document.getElementById('login-form').style.display = 'flex'; // Show the login form
-        }
-
-        function loginFunction() {
-            var email = document.getElementById('email').value;
-            var password = document.getElementById('password').value;
-            
-            if (email && password) {
-                document.getElementById('submit-login').style.backgroundColor = '#005BB5'; // Change color to blue
-                document.getElementById('submit-login').style.color = 'white';
-            } else {
-                alert('Please enter both email and password');
-            }
-        }
-    </script>
 </body>
 </html>
 
