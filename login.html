@@ -15,66 +15,72 @@
         body {
             background-color: #f8f8f8;
             color: #333;
+            padding-top: 80px;
+        }
+        .navbar {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            height: 100vh;
-            flex-direction: column;
-        }
-        .container {
-            background-color: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px 80px;
+            background: #fff;
+            position: fixed;
             width: 100%;
-            max-width: 400px;
-            text-align: center;
+            top: 0;
+            left: 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
         }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-        input {
-            width: 100%;
-            padding: 15px;
-            margin-bottom: 20px;
-            border: 2px solid #ccc;
-            border-radius: 8px;
-            font-size: 16px;
-        }
-        input:focus {
-            border-color: #007AFF;
-        }
-        .button {
-            padding: 15px;
+        .navbar a {
+            text-decoration: none;
+            color: #333;
             font-size: 18px;
-            border-radius: 30px;
-            border: none;
-            cursor: pointer;
-            font-weight: bold;
-            transition: 0.3s ease;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+        .navbar .logo a {
+            text-decoration: none;
+            color: #333;
+        }
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 100px;
+        }
+        .form-container input {
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 2px solid #007AFF;
+            border-radius: 5px;
+            width: 300px;
+        }
+        .form-container button {
+            padding: 15px 40px;
             background-color: #007AFF;
             color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s ease;
         }
-        .button:hover {
-            transform: scale(1.1);
-        }
-        p {
-            margin-top: 20px;
-        }
-        a {
-            color: #007AFF;
-            text-decoration: none;
+        .form-container button:hover {
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="navbar">
+        <!-- Logo with link to Homepage -->
+        <div class="logo"><a href="index.html"><h2>Beyond</h2></a></div>
+    </div>
+    
+    <div class="form-container">
         <h1>Log In</h1>
-        <input type="email" placeholder="Email" required>
-        <input type="password" placeholder="Password" required>
-        <button class="button">Log In</button>
-        <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+        <input type="email" placeholder="Enter your email" required>
+        <input type="password" placeholder="Enter your password" required>
+        <button type="submit">Log In</button>
     </div>
 </body>
 </html>
