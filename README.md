@@ -37,10 +37,6 @@
             margin: 0 15px;
             font-weight: 600;
         }
-        .navbar .logo a {
-            text-decoration: none;
-            color: #333;
-        }
         .hero {
             height: 100vh;
             display: flex;
@@ -99,13 +95,13 @@
 </head>
 <body>
     <div class="navbar">
-        <div class="logo"><a href="index.html"><h2>Beyond</h2></a></div>
+        <div class="logo"><a href="index.html">Beyond</a></div>
         <div>
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#features">Features</a>
             <a href="#testimonials">Testimonials</a>
-            <a href="#membership">Join Now</a>
+            <a href="signup.html">Join Now</a> <!-- Updated link to the Get Started (signup) page -->
         </div>
     </div>
     
@@ -113,10 +109,8 @@
         <h1>Beyond</h1>
         <p>Helping you break free from distractions and achieve your best self through structured goals and tracking.</p>
         <div class="auth-buttons">
-            <!-- Correct Link to Sign-Up Page -->
-            <a href="signup.html"><button class="button sign-up">Get Started</button></a>
-            <!-- Link to Login Page -->
             <a href="login.html"><button class="button sign-in">Log In</button></a>
+            <a href="signup.html"><button class="button sign-up">Get Started</button></a> <!-- Correct link to Get Started page -->
         </div>
     </div>
 
@@ -125,3 +119,4 @@
     </footer>
 </body>
 </html>
+
