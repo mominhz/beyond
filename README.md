@@ -37,6 +37,10 @@
             margin: 0 15px;
             font-weight: 600;
         }
+        .navbar .logo a {
+            text-decoration: none;
+            color: #333;
+        }
         .hero {
             height: 100vh;
             display: flex;
@@ -95,7 +99,7 @@
 </head>
 <body>
     <div class="navbar">
-        <div class="logo"><h2>Beyond</h2></div>
+        <div class="logo"><a href="index.html"><h2>Beyond</h2></a></div>
         <div>
             <a href="#home">Home</a>
             <a href="#about">About</a>
