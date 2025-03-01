@@ -109,10 +109,10 @@
         <h1>Beyond</h1>
         <p>Helping you break free from distractions and achieve your best self through structured goals and tracking.</p>
         <div class="auth-buttons">
+            <!-- Correct Link to Sign-Up Page -->
+            <a href="signup.html"><button class="button sign-up">Get Started</button></a>
             <!-- Link to Login Page -->
             <a href="login.html"><button class="button sign-in">Log In</button></a>
-            <!-- Link to Get Started Page -->
-            <a href="signup.html"><button class="button sign-up">Get Started</button></a>
         </div>
     </div>
 
