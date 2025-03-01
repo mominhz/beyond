@@ -83,7 +83,7 @@
             transform: scale(1.1);
         }
         .input-container {
-            display: flex;
+            display: none;
             flex-direction: column;
             align-items: center;
             margin-top: 50px;
@@ -126,12 +126,12 @@
         <h1>Beyond</h1>
         <p>Helping you break free from distractions and achieve your best self through structured goals and tracking.</p>
         <div class="auth-buttons">
-            <button class="button sign-in" onclick="window.location.href='login.html'">Log In</button>
+            <button class="button sign-in" onclick="showLoginForm()">Log In</button>
             <button class="button sign-up" onclick="window.location.href='signup.html'">Get Started</button>
         </div>
     </div>
 
-    <!-- Login Form Section -->
+    <!-- Login Form Section (Initially Hidden) -->
     <div class="input-container" id="login-form">
         <input type="email" placeholder="Email" id="email" required>
         <input type="password" placeholder="Password" id="password" required>
@@ -143,6 +143,10 @@
     </footer>
 
     <script>
+        function showLoginForm() {
+            document.getElementById('login-form').style.display = 'flex'; // Show the login form
+        }
+
         function loginFunction() {
             var email = document.getElementById('email').value;
             var password = document.getElementById('password').value;
