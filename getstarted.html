@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started - Beyond</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+        body {
+            background-color: #f8f8f8;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        input:focus {
+            border-color: #007AFF;
+        }
+        .button {
+            padding: 15px;
+            font-size: 18px;
+            border-radius: 30px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s ease;
+            background-color: #007AFF;
+            color: white;
+        }
+        .button:hover {
+            transform: scale(1.1);
+        }
+        p {
+            margin-top: 20px;
+        }
+        a {
+            color: #007AFF;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Get Started</h1>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button class="button">Sign Up</button>
+        <p>Already have an account? <a href="login.html">Log in</a></p>
+    </div>
+</body>
+</html>
