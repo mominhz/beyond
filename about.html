@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Beyond</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+        body {
+            background-color: #f8f8f8;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        .logo {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .mission {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            opacity: 0;
+            animation: fadeIn 3s ease-in-out forwards;
+        }
+        .flowchart {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            opacity: 0;
+            animation: fadeIn 4s ease-in-out forwards;
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .chart-box {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .chart-box div {
+            width: 48%;
+            padding: 20px;
+            background-color: #007AFF;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">Beyond</div>
+        <h2>Our Mission and Goals</h2>
+        <p class="mission">At Beyond, we aim to help individuals break free from distractions and live a healthier, more focused life by tracking their goals and overcoming obstacles.</p>
+        
+        <!-- Flow Chart Animation -->
+        <div class="flowchart">
+            <div class="chart-box">
+                <div>
+                    <h3>Goal Setting</h3>
+                    <p>We believe that setting clear, achievable goals is key to personal growth and success.</p>
+                </div>
+                <div>
+                    <h3>Tracking Progress</h3>
+                    <p>Through tracking, users can see their progress and stay motivated on their journey.</p>
+                </div>
+            </div>
+            <div class="chart-box">
+                <div>
+                    <h3>Overcoming Challenges</h3>
+                    <p>We provide the tools and support to help users overcome their personal challenges.</p>
+                </div>
+                <div>
+                    <h3>Living a Healthier Life</h3>
+                    <p>Our ultimate goal is to help individuals live a life free from distractions and full of fulfillment.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
