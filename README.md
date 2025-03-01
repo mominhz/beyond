@@ -3,33 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beyond</title>
+    <title>Beyond - Achieve Your Best</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" rel="stylesheet">
     <style>
-        body {
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
             font-family: 'Inter', sans-serif;
-            background-color: #000;
-            color: #fff;
+        }
+        body {
+            background-color: #f8f8f8;
+            color: #333;
         }
         .navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 50px;
-            background-color: black;
+            padding: 20px 80px;
+            background: #fff;
             position: fixed;
             width: 100%;
             top: 0;
             left: 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             z-index: 1000;
         }
         .navbar a {
             text-decoration: none;
-            color: #fff;
+            color: #333;
             font-size: 18px;
             margin: 0 15px;
-            cursor: pointer;
+            font-weight: 600;
         }
         .hero {
             height: 100vh;
@@ -38,8 +43,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding-top: 80px;
-            background: url('https://source.unsplash.com/1600x900/?luxury,lifestyle') no-repeat center center/cover;
+            background: url('https://source.unsplash.com/1600x900/?motivation,health') no-repeat center center/cover;
         }
         .hero h1 {
             font-size: 4rem;
@@ -65,100 +69,38 @@
             transition: 0.3s ease;
         }
         .sign-in {
-            background-color: #ff0055;
+            background-color: #007AFF;
             color: white;
         }
         .sign-up {
             background-color: transparent;
-            border: 2px solid #ff0055;
-            color: #ff0055;
+            border: 2px solid #007AFF;
+            color: #007AFF;
         }
         .button:hover {
             transform: scale(1.1);
         }
-        .section {
-            padding: 100px 50px;
-            text-align: center;
-            background-color: #111;
-        }
-        .about, .membership, .achievements, .testimonials {
-            background-color: #222;
-        }
-        .membership button {
-            background-color: #ff0055;
-            color: white;
-            padding: 10px 25px;
-            border-radius: 20px;
-            font-size: 18px;
-            cursor: pointer;
-        }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            padding: 50px;
-        }
-        .gallery img {
-            width: 300px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 10px;
-        }
     </style>
-    <script>
-        function goToSignIn() {
-            window.location.href = 'signin.html';
-        }
-        function goToSignUp() {
-            window.location.href = 'signup.html';
-        }
-        function goToSection(id) {
-            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-        }
-    </script>
 </head>
 <body>
     <div class="navbar">
         <div class="logo"><h2>Beyond</h2></div>
         <div>
-            <a onclick="goToSection('home')">Home</a>
-            <a onclick="goToSection('about')">About Us</a>
-            <a onclick="goToSection('achievements')">Achievements</a>
-            <a onclick="goToSection('testimonials')">Testimonials</a>
-            <a onclick="goToSection('membership')">Membership</a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#membership">Join Now</a>
         </div>
     </div>
     <div class="hero" id="home">
         <h1>Beyond</h1>
-        <p>Helping you break free from habits and achieve your goals through structured challenges and tracking.</p>
+        <p>Helping you break free from distractions and achieve your best self through structured goals and tracking.</p>
         <div class="auth-buttons">
-            <button class="button sign-in" onclick="goToSignIn()">Log In</button>
-            <button class="button sign-up" onclick="goToSignUp()">Get Started</button>
+            <button class="button sign-in">Log In</button>
+            <button class="button sign-up">Get Started</button>
         </div>
-    </div>
-    <div class="gallery">
-        <img src="https://source.unsplash.com/400x300/?success" alt="Success">
-        <img src="https://source.unsplash.com/400x300/?goal" alt="Goal">
-        <img src="https://source.unsplash.com/400x300/?motivation" alt="Motivation">
-    </div>
-    <div class="section about" id="about">
-        <h2>About Us</h2>
-        <p>Beyond is dedicated to helping individuals overcome personal challenges through structured goal setting and tracking.</p>
-    </div>
-    <div class="section achievements" id="achievements">
-        <h2>Greatest Achievements</h2>
-        <p>We've helped thousands of users reach their personal and professional goals.</p>
-    </div>
-    <div class="section testimonials" id="testimonials">
-        <h2>What People Say</h2>
-        <p>"Beyond changed my life! I finally overcame my biggest challenges and achieved my dreams." - User A</p>
-        <p>"A game-changer for self-improvement! Highly recommend it to everyone." - User B</p>
-    </div>
-    <div class="section membership" id="membership">
-        <h2>Membership</h2>
-        <p>Join our community and gain access to exclusive challenges, personalized goal tracking, and expert guidance.</p>
-        <button onclick="alert('Membership purchased!')">Buy Membership</button>
     </div>
 </body>
 </html>
+
