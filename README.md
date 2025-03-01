@@ -80,6 +80,15 @@
         .button:hover {
             transform: scale(1.1);
         }
+        footer {
+            padding: 20px;
+            text-align: center;
+            background: #fff;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
     </style>
 </head>
 <body>
@@ -92,15 +101,25 @@
             <a href="#testimonials">Testimonials</a>
             <a href="#membership">Join Now</a>
         </div>
+        <div class="auth-buttons">
+            <button class="button sign-in" onclick="window.location.href='login.html'">Log In</button>
+            <button class="button sign-up" onclick="window.location.href='signup.html'">Get Started</button>
+        </div>
     </div>
+    
     <div class="hero" id="home">
         <h1>Beyond</h1>
         <p>Helping you break free from distractions and achieve your best self through structured goals and tracking.</p>
         <div class="auth-buttons">
-            <button class="button sign-in">Log In</button>
-            <button class="button sign-up">Get Started</button>
+            <button class="button sign-in" onclick="window.location.href='login.html'">Log In</button>
+            <button class="button sign-up" onclick="window.location.href='signup.html'">Get Started</button>
         </div>
     </div>
+    
+    <footer>
+        <p>© 2025 Beyond. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
+
 
